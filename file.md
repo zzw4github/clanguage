@@ -439,35 +439,36 @@ main()
 Ｃ系统提供了丰富的系统文件，称为库文件，C的库文件分为两类，一类是扩展名为".h"的文件，称为头文件， 在前面的包含命令中我们已多次使用过。在".h"文件中包含了常量定义、类型定义、宏定义、函数原型以及各种编译选择设置等信息。另一类是函数库，包括了各种函数的目标代码，供用户在程序中调用。通常在程序中调用一个库函数时，要在调用之前包含该函数原型所在的".h" 文件。
 在附录中给出了全部库函数  
 
-ALLOC.H 　　　|说明内存管理函数(分配、释放等)。
-ASSERT.H 　 　|定义 assert调试宏。
-BIOS.H 　　 　|说明调用IBM—PC ROM BIOS子程序的各个函数。
-CONIO.H 　　　|说明调用DOS控制台I/O子程序的各个函数。
-CTYPE.H 　　　|包含有关字符分类及转换的名类信息(如 isalpha和toascii等)。
-DIR.H 　　　　|包含有关目录和路径的结构、宏定义和函数。
-DOS.H 　　　　|定义和说明MSDOS和8086调用的一些常量和函数。
-ERRON.H 　　　|定义错误代码的助记符。
-FCNTL.H 　　　|定义在与open库子程序连接时的符号常量。
-FLOAT.H 　　　|包含有关浮点运算的一些参数和函数。
-GRAPHICS.H 　 |说明有关图形功能的各个函数，图形错误代码的常量定义，正对不同驱动程序的各种颜色值，及函数用到的一些特殊结构。
-IO.H 　　　　 |包含低级I/O子程序的结构和说明。
-LIMIT.H 　　　|包含各环境参数、编译时间限制、数的范围等信息。
-MATH.H 　　　 |说明数学运算函数，还定了 HUGE VAL 宏， 说明了matherr和matherr子程序用到的特殊结构。
-MEM.H 　　　　|说明一些内存操作函数(其中大多数也在STRING.H 中说明)。
-PROCESS.H 　　|说明进程管理的各个函数，spawn…和EXEC …函数的结构说明。
-SETJMP.H 　　 |定义longjmp和setjmp函数用到的jmp buf类型， 说明这两个函数。
-SHARE.H 　　　|定义文件共享函数的参数。
-SIGNAL.H 　　 |定义SIG[ZZ(Z] [ZZ)]IGN和SIG[ZZ(Z] [ZZ)]DFL常量，说明rajse和signal两个函数。
-STDARG.H 　　 |定义读函数参数表的宏。(如vprintf,vscarf函数)。
-STDDEF.H 　　 |定义一些公共数据类型和宏。
-STDIO.H 　　　|定义Kernighan和Ritchie在Unix System V 中定义的标准和扩展的类型和宏。还定义标准I/O 预定义流：stdin,stdout和stderr，说明 I/O流子程序。
-STDLIB.H 　　 |说明一些常用的子程序：转换子程序、搜索/ 排序子程序等。
-STRING.H 　　 |说明一些串操作和内存操作函数。
-SYSSTAT.H 　 |定义在打开和创建文件时用到的一些符号常量。
-SYSTYPES.H 　|说明ftime函数和timeb结构。
-SYSTIME.H 　 |定义时间的类型time[ZZ(Z] [ZZ)]t。
-TIME.H 　　　 |定义时间转换子程序asctime、localtime和gmtime的结构，ctime、 difftime、gmtime、localtime和stime用到的类型，并提供这些函数的原型。
-VALUE.H 　　　|定义一些重要常量， 包括依赖于机器硬件的和为与Unix System V相兼容而说明的一些常量，包括浮点和双精度值的范围。
+函数|意义
+ALLOC.H |说明内存管理函数(分配、释放等)。
+ASSERT.H |定义 assert调试宏。
+BIOS.H |说明调用IBM—PC ROM BIOS子程序的各个函数。
+CONIO.H |说明调用DOS控制台I/O子程序的各个函数。
+CTYPE.H|包含有关字符分类及转换的名类信息(如 isalpha和toascii等)。
+DIR.H|包含有关目录和路径的结构、宏定义和函数。
+DOS.H|定义和说明MSDOS和8086调用的一些常量和函数。
+ERRON.H|定义错误代码的助记符。
+FCNTL.H|定义在与open库子程序连接时的符号常量。
+FLOAT.H|包含有关浮点运算的一些参数和函数。
+GRAPHICS.H|说明有关图形功能的各个函数，图形错误代码的常量定义，正对不同驱动程序的各种颜色值，及函数用到的一些特殊结构。
+IO.H|包含低级I/O子程序的结构和说明。
+LIMIT.H|包含各环境参数、编译时间限制、数的范围等信息。
+MATH.H|说明数学运算函数，还定了 HUGE VAL 宏， 说明了matherr和matherr子程序用到的特殊结构。
+MEM.H|说明一些内存操作函数(其中大多数也在STRING.H 中说明)。
+PROCESS.H|说明进程管理的各个函数，spawn…和EXEC …函数的结构说明。
+SETJMP.H|定义longjmp和setjmp函数用到的jmp buf类型， 说明这两个函数。
+SHARE.H|定义文件共享函数的参数。
+SIGNAL.H|定义SIG[ZZ(Z] [ZZ)]IGN和SIG[ZZ(Z] [ZZ)]DFL常量，说明rajse和signal两个函数。
+STDARG.H|定义读函数参数表的宏。(如vprintf,vscarf函数)。
+STDDEF.H|定义一些公共数据类型和宏。
+STDIO.H|定义Kernighan和Ritchie在Unix System V 中定义的标准和扩展的类型和宏。还定义标准I/O 预定义流：stdin,stdout和stderr，说明 I/O流子程序。
+STDLIB.H|说明一些常用的子程序：转换子程序、搜索/ 排序子程序等。
+STRING.H|说明一些串操作和内存操作函数。
+SYSSTAT.H|定义在打开和创建文件时用到的一些符号常量。
+SYSTYPES.H|说明ftime函数和timeb结构。
+SYSTIME.H|定义时间的类型time[ZZ(Z] [ZZ)]t。
+TIME.H|定义时间转换子程序asctime、localtime和gmtime的结构，ctime、 difftime、gmtime、localtime和stime用到的类型，并提供这些函数的原型。
+VALUE.H|定义一些重要常量， 包括依赖于机器硬件的和为与Unix System V相兼容而说明的一些常量，包括浮点和双精度值的范围。
 
 
 来源： <http://www.cnblogs.com/whiteyun/archive/2009/08/08/1541822.html>
