@@ -18,3 +18,25 @@
 ##sublime build
 [配置gcc](http://www.yalewoo.com/sublime_text_3_gcc.html)
 
+1. mingw 配置环境变量 
+2. 选择tool –> Build System –> New Build System
+3. 输入下面代码
+```
+{
+	"working_dir": "$file_path",
+	"cmd": "gcc -Wall \"$file_name\" -o \"$file_base_name\"",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"selector": "source.c",
+ 
+	"variants": 
+	[
+		{	
+		"name": "Run",
+        	"shell_cmd": "gcc -Wall \"$file\" -o \"$file_base_name\" && start cmd /c \"\"${file_path}/${file_base_name}\" & pause\""
+		}
+	]
+}
+```
+4. 按Ctrl+s保存，会自动打开user目录（Sublime Text 3\Packages\User），我们修改 文件名为 c.sublime-build，保存在此目录。
+5. ctrl+b ctrl+shif+b 编译 运行
+
