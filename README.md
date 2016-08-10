@@ -40,3 +40,8 @@
 4. 按Ctrl+s保存，会自动打开user目录（Sublime Text 3\Packages\User），我们修改 文件名为 c.sublime-build，保存在此目录。
 5. ctrl+b ctrl+shif+b 编译 运行
 
+###IDE
+- [codelite](http://downloads.codelite.org/ "codelite")
+- [gcc] (https://gcc.gnu.org/ "gcc")
+- [clang](http://clang.llvm.org/get_started.html "clang")
+
