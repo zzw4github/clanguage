@@ -12,3 +12,6 @@
 [cppreference_zh](http://zh.cppreference.com/w/cpp)    
 [sgi_stl](http://www.sgi.com/tech/stl/)  
 
+###book
+(book_list)[http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list]
+
