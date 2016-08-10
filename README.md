@@ -15,3 +15,6 @@
 ###book
 (book_list)[http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list]
 
+##sublime build
+[配置gcc](http://www.yalewoo.com/sublime_text_3_gcc.html)
+
