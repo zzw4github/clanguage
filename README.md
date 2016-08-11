@@ -1,7 +1,8 @@
 ### clanguage
-
+[cstandard](http://ganquan.info/standard-c/ "standard-c")  
+[wiki] (https://en.wikipedia.org/wiki/C%2B%2B_Standard_Library)  
 [c-tutorial](http://www.cprogramming.com/tutorial/c-tutorial.html "c-tutorial")
-
+[c++](http://www.cplusplus.com/ "c++")
 [cprogramming](http://www.tutorialspoint.com/cprogramming/ "cprogramming")
 
 [learn-c](http://www.learn-c.org/ "learn-c")

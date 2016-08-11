@@ -198,8 +198,8 @@ float fScore[3];
 int main()
 {
 struct stStudent stu;
-printf("%d", (int)stu.fScore - (int)&stu);
-return0;
+printf("%d", (int)stu.fScore - (int)&stu); 
+return 0;
 }
 注：默认是模4地址的。
 ```
