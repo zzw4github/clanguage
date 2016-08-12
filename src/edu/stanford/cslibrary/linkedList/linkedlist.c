@@ -154,7 +154,6 @@ lastPtrRef= &((*lastPtrRef)->next); // Advance to point to the
 // head == {1, 2, 3, 4, 5};
 return(head);
 }
-
 void printData(struct node* head)
 {
 	printf("%d\n", *head);
@@ -176,6 +175,8 @@ void PushTest() {
 
 int main()
 {
-	LengthTest();
-	PushTest();
+	// LengthTest();
+	// PushTest();
+	struct node* node = BuildWithDummyNode();
+	printData(node);
 }

@@ -708,7 +708,7 @@ void RecursiveReverse(struct node** headRef) {
  Basic Utility Function Implementations
  Here is the source code for the basic utility functions.
  */
- 
+
 // Length()
 
 // Return the number of nodes in a list
@@ -745,4 +745,9 @@ struct node* BuildOneTwoThree() {
 	Push(&head, 2);
 	Push(&head, 1);
 	return(head);
+}
+
+int main()
+{
+	struct node* node = BuildWith
 }
