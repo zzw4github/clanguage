@@ -13,7 +13,7 @@
             } 
             void main() 
             { 
-                char *str = new char[100]; 
-                char *pstr = &str; 
+                char* str = new char[100]; 
+                char* pstr = &str; 
                 MemoryFree(pstr); 
             } 
